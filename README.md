@@ -1,7 +1,6 @@
 # LLMater
 
 ## Literature Study (Literatures later than 2022)
-Focus on predictive chemistry/materials science, classification/regression. 
 
 | Model name | Architecture | Data source | Description | Training method / Fine-tuning | Task | Year | DOI | Github link |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
