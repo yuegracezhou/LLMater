@@ -4,17 +4,22 @@
 
 Supervisor: Chao Zhang (Department of Chemistry, Uppsala University)
 
-Group Members: André Ramos Ekengren, Yue Zhou, Ramkishor Prabhu Ramlal
+Group Members: André Ramos Ekengren, Ramkishor Prabhu Ramlal, Yue Zhou
 
 ---
 
 ## Table of contents
 
 Topic Overview
+
 Literature Survey
+
 Data Overview
+
 Methodologies
+
 Benchmark Results
+
 Future work
 
 ---
