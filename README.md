@@ -100,3 +100,10 @@ Code for the three subtasks is organised as:
 - Developing more targeted generative workflows that couple LLM-based generation with domain-specific filters or chemistry-based checks.
 
 Contributions and suggestions are welcome, especially regarding datasets, baselines, and evaluation protocols.
+
+---
+
+## License
+
+This project is released under the MIT License.
+
