@@ -10,13 +10,13 @@ Group Members: André Ramos Ekengren, Ramkishor Prabhu Ramlal, Yue Zhou
 
 - [Topic Overview](#topic-overview)
 
-- [Literature Survey](#Literature Survey (from 2022))
+- [Literature Survey](#Literature-Survey (from 2022))
 
-- [Methodologies](# Methodologies)
+- [Methodologies](#Methodologies)
 
-- [Benchmark Results](# Benchmark Results)
+- [Benchmark Results](#Benchmark-Results)
 
-- [Future work](# Future work)
+- [Future work](#Future-work)
 
 ---
 
