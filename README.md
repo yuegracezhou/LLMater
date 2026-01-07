@@ -10,7 +10,7 @@ Group Members: André Ramos Ekengren, Ramkishor Prabhu Ramlal, Yue Zhou
 
 ## Table of contents
 
-- Topic Overview[# ⚙️ Topic Overview]
+- [⚙️ Topic Overview](#topic-overview)
 
 Literature Survey
 
