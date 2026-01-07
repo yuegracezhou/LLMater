@@ -1,5 +1,36 @@
 # LLMater
 
+# 🧪 Data Science in a Molecular Universe
+
+Supervisor: Chao Zhang (Department of Chemistry, Uppsala University)
+Group Members: André Ramos Ekengren, Yue Zhou, Ramkishor Prabhu Ramlal
+
+---
+
+# Table of contents
+
+## Topic Overview
+## Literature Survey
+## Data Overview
+## Methodologies
+## Benchmark Results
+## Future work
+
+---
+
+## ⚙️ Topic Overview
+
+Our project investigates the application of large language models (LLMs) to molecular and material design, focusing on molecular property prediction.
+
+The main goal in the end is to apply LLMs in the context of battery research, predicting the properties of electrolyte. We then aim to benchmark against traditional ML-models.
+
+We explore transformer-based architectures, planning to combine prompt engineering and parameter fine-tuning to enhance the model’s reasoning and reliability in chemistry-related
+tasks.
+
+Our work aims to bridge natural language understanding and molecular representation for improved prediction accuracy and knowledge grounding.
+
+---
+
 ## Literature Survey (from 2022)
 
 | Model name | Architecture | Data link | Description | Adaptation | Purpose | Year | DOI | Github link |
