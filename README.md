@@ -3,18 +3,19 @@
 # 🧪 Data Science in a Molecular Universe
 
 Supervisor: Chao Zhang (Department of Chemistry, Uppsala University)
+
 Group Members: André Ramos Ekengren, Yue Zhou, Ramkishor Prabhu Ramlal
 
 ---
 
-# Table of contents
+## Table of contents
 
-## Topic Overview
-## Literature Survey
-## Data Overview
-## Methodologies
-## Benchmark Results
-## Future work
+Topic Overview
+Literature Survey
+Data Overview
+Methodologies
+Benchmark Results
+Future work
 
 ---
 
