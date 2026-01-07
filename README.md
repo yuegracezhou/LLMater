@@ -10,7 +10,7 @@ Group Members: André Ramos Ekengren, Ramkishor Prabhu Ramlal, Yue Zhou
 
 ## Table of contents
 
-Topic Overview
+- Topic Overview[# ⚙️ Topic Overview]
 
 Literature Survey
 
@@ -62,5 +62,4 @@ Our work aims to bridge natural language understanding and molecular representat
 | SMI-TED-IC | SMI-TED | [Github](https://github.com/murtazazohair/IBM_SMI-TED-IC) | Chemical foundation model-guided design of high ionic conductivity electrolyte formulations | Fine-tuning | Regression | 2025 | [DOI](https://doi.org/10.1038/s41524-025-01774-4) | [Github](https://github.com/murtazazohair/IBM_SMI-TED-IC) |
 | Leveraging GPT-4 to transform chemistry from paper to practice  | GPT-4 | [Data](https://gitlab.com/heingroup/gpt-xml-translation.) | 1\. Using GPT 4 to read scientific literature and generate actionable steps 2.Generate a script to communicate the steps to EasyMax Reactor | N/A | N/A | 2024 | N/A | [Github](https://gitlab.com/heingroup/gpt-xml-translation.) |
 |ChemLLMBench|GPT-4, GPT-3, Davinci-003, Llama, Galactica | [Data](https://github.com/ChemFoundationModels/ChemLLMBench) | What can Large Language Models do in chemistry? A comprehensive benchmark on eight tasks |In-context learning | Generation, Classification, Ranking | 2023 | [DOI](https://doi.org/10.48550/arXiv.2305.18365) | [Github](https://github.com/ChemFoundationModels/ChemLLMBench)|
-
 
