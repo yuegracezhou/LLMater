@@ -105,5 +105,5 @@ Contributions and suggestions are welcome, especially regarding datasets, baseli
 
 ## License
 
-This project is released under the MIT License.
+This project is released under the [MIT License](https://opensource.org/license/MIT).
 
