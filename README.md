@@ -14,8 +14,6 @@ Group Members: André Ramos Ekengren, Ramkishor Prabhu Ramlal, Yue Zhou
 
 Literature Survey
 
-Data Overview
-
 Methodologies
 
 Benchmark Results
