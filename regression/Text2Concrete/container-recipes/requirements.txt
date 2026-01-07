@@ -1,0 +1,14 @@
+torch
+torchvision
+pandas
+datasets
+transformers
+trl
+accelerate
+bitsandbytes
+peft
+kernels
+jupyter
+openai
+scikit-learn
+matplotlib
