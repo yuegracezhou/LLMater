@@ -32,6 +32,6 @@ In this phase of the project, we first perform the same benchmarking experiments
 
 # Credits
 
-Original repo: [*ChemLLMBench*](https://github.com/ChemFoundationModels/ChemLLMBench)
-Notebook     : [*Property_Prediction*](https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/Property_Prediction.ipynb)
+Original repo: [*ChemLLMBench*](https://github.com/ChemFoundationModels/ChemLLMBench)<br>
+Notebook     : [*Property_Prediction*](https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/Property_Prediction.ipynb)<br>
 Data         : [*Data*](https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/data/property_prediction/BACE.csv)
