@@ -1,6 +1,6 @@
 # Classification
 
-This approach tries to replicate the experimental setups for molecular property prediction performed in  [**What can Large Language Models do in chemistry? A comprehensive benchmark on eight tasks**]([https://github.com/ChemFoundationModels/ChemLLMBench](https://doi.org/10.48550/arXiv.2305.18365)) for molecular property prediction. It takes a SMILES input and predicts whether the molecule exhibits a particular property.
+This approach tries to replicate the experimental setups for molecular property prediction performed in  [**What can Large Language Models do in chemistry? A comprehensive benchmark on eight tasks**]([https://github.com/ChemFoundationModels/ChemLLMBench](https://doi.org/10.48550/arXiv.2305.18365)), for molecular property prediction. It takes a SMILES input and predicts whether the molecule exhibits a particular property.
 
 # Method
 
