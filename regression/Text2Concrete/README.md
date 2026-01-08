@@ -9,10 +9,10 @@ This repository is originally a fork, based on previous work that can be found a
 ### Changes
 As the text-davinci-003 model is deprecated, it is no longer used in this project. Instead, we test several LLMs on the original data, both closed- and open-source models. The LLMs that we use for benchmarking are:
 
-- GPT-3.5-turbo-instruct
-- GPT-4o-mini
-- Llama-3.2-3B-Instruct
-- Llama-3.1-70B-Instruct-bnb-4bit
+- **GPT-3.5-Turbo-Instruct**
+- **GPT-4o-mini**
+- **Llama-3.2-3B-Instruct**
+- **Llama-3.1-70B-Instruct-bnb-4bit**
 
 We have made some changes to the code, the software and packages that were used. Finally, we slightly altered the given context prompts, and calculations of the metrics used to evaluate the model performance.
 
@@ -26,6 +26,7 @@ The primary goal of this study is to compare the prediction performance of compr
 - [Post-installation](#post-installation)
 - [Hardware](#hardware)
 - [Usage](#usage)
+- [Results](#results)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
@@ -90,11 +91,65 @@ We provide two different options for the rest of the setup
 For inference of Llama-3.2-3B-Instruct and Llama-3.1-70B-Instruct-bnb-4bit we used a T4 and A40 GPU respectively.
 
 ## Usage
-1. Run the different benchmarking notebooks in your container or environment to train the completion predictor and generate completions for test data.
+1. Run the different `Benchmarking-model_name.ipynb` notebooks in your container or environment to train the completion predictor and generate completions for test data.
 2. The completion predictor's performance will be evaluated using R-squared, MSE, and MAE metrics, which will be printed on the console. The resulting predictions will be saved as CSVs in the results folder for each model. 
-3. Run the benchmarking results notebooks for the evaluation of each model.
+3. Run the `Benchmarking-Results-model_name.ipynb` notebooks for the evaluation of each model.
 3. You can modify the code to customize the prompts, completions, and other parameters as needed for your specific use case.
 
+
+## Results 
+This section contains screenshots of the evaluation results for each LLM model compared to traditional ML models.
+
+### GPT-3.5-Turbo-Instruct
+
+#### Evaluation metrics
+| Approach | R-squared | MSE | MAE |
+| -------- | --------- | --- | --- |
+| RF | 0.58 +- 0.11 | 44.65 +- 11.04 | 5.31 +- 0.69 |
+| GPR | 0.53 +- 0.25 | 49.73 +- 25.08 | 5.67 +- 1.39 |
+| ICL_finetuned | 0.37 +- 0.18 | 67.48 +- 24.33 | 6.21 +- 1.18 |
+| ICL | 0.09 +- 0.33 | 100.03 +- 48.38 | 7.54 +- 1.58 |
+
+#### Parity Plot
+![](images/gpt-3.5-turbo-instruct-plot.png)
+
+### GPT-4o-mini
+
+#### Evaluation metrics
+| Approach | R-squared | MSE | MAE |
+| -------- | --------- | --- | --- |
+| RF | 0.56 +- 0.11 | 46.85 +- 13.10 | 5.47 +- 0.78 |
+| GPR | 0.53 +- 0.25 | 49.73 +- 25.08 | 5.67 +- 1.39 |
+| ICL_finetuned | 0.45 +- 0.26 | 58.44 +- 25.51 | 5.66 +- 1.30 |
+| ICL | -0.19 +- 0.50 | 127.82 +- 52.72 | 8.45 +- 1.92 |
+
+#### Parity Plot
+![](images/gpt-4o-mini-plot.png)
+### Llama-3.2-3B-Instruct
+
+#### Evaluation metrics
+| Approach | R-squared | MSE | MAE |
+| -------- | --------- | --- | --- |
+| RF | 0.58 +- 0.09 | 45.01 +- 10.33 | 5.38 +- 0.59 |
+| GPR | 0.53 +- 0.25 | 49.73 +- 25.08 | 5.67 +- 1.39 |
+| ICL_finetuned | 0.26 +- 0.34 | 80.42 +- 42.50 | 7.12 +- 1.81 |
+| ICL | 0.01 +- 0.39 | 105.54 +- 41.85 | 8.01 +- 1.79 |
+
+#### Parity Plot
+![](images/Llama-3.2-3B-Instruct-plot.png)
+
+### Llama-3.1-70B-Instruct-bnb-4bit
+
+#### Evaluation Metrics
+| Approach | R-squared | MSE | MAE |
+| -------- | --------- | --- | --- |
+| RF | 0.56 +- 0.10 | 47.04 +- 13.36 | 5.48 +- 0.87 |
+| GPR | 0.53 +- 0.25 | 49.73 +- 25.08 | 5.67 +- 1.39 |
+| ICL_finetuned | 0.63 +- 0.25 | 39.28 +- 23.82 | 4.72 +- 1.06 |
+| ICL | 0.31 +- 0.37 | 70.65 +- 31.55 | 6.31 +- 1.52 |
+
+#### Parity Plot
+![](images/Llama-3.1-70B-Instruct-bnb-4bit-plot.png)
 
 ## Contributing
 Contributions to this project are welcome! If you would like to contribute, please follow standard GitHub practices, such as forking the repository, creating a branch for your changes, and submitting a pull request with a clear description of your changes. Please ensure that your changes are well-tested and adhere to the project's coding standards.

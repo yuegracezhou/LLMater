@@ -42,28 +42,19 @@ def gather_metric_results(approaches, model_name):
         approach_results = {}
         for metric, values in metrics.items():
             metric_results = {}
-            mean, margin_error = compute_mean_and_margin_error(values)
+            mean, std = compute_mean_and_std(values)
             metric_results["mean"] = mean
-            metric_results["margin_error"] = margin_error
+            metric_results["std"] = std
             approach_results[metric] = metric_results
         results[approach] = approach_results
     return results
 
-def compute_mean_and_margin_error(metric_sample):
+def compute_mean_and_std(metric_sample):
     n = len(metric_sample)
     mean = np.mean(metric_sample)
-    std = np.std(metric_sample)
-    standard_error = std/np.sqrt(n)
+    std = np.std(metric_sample, ddof=1)
     
-    confidence_level = 0.95
-    degrees_of_freedom = n - 1
-
-    lower_ci, upper_ci = stats.t.interval(confidence_level,
-                                          degrees_of_freedom,
-                                          mean,
-                                          standard_error)
-    margin_error = upper_ci - mean
-    return mean, margin_error
+    return mean, std
 
 
 def plot_scatter(model_name, folder_name, ax):
@@ -92,15 +83,15 @@ def create_markdown_table(results):
         mae_result = result["MAE"]
 
         r_squared_mean = r_squared_result["mean"]
-        r_squared_margin = r_squared_result["margin_error"]
+        r_squared_std = r_squared_result["std"]
 
         mse_mean = mse_result["mean"]
-        mse_margin = mse_result["margin_error"]
+        mse_std = mse_result["std"]
         
         mae_mean = mae_result["mean"]
-        mae_margin = mae_result["margin_error"]
+        mae_std = mae_result["std"]
 
-        markdown_table += f"| {approach} | {r_squared_mean:.2f} +- {r_squared_margin:.2f} | {mse_mean:.2f} +- {mse_margin:.2f} | {mae_mean:.2f} +- {mae_margin:.2f} |\n"
+        markdown_table += f"| {approach} | {r_squared_mean:.2f} +- {r_squared_std:.2f} | {mse_mean:.2f} +- {mse_std:.2f} | {mae_mean:.2f} +- {mae_std:.2f} |\n"
 
     display(Markdown("## Benchmarking Results"))
     display(Markdown(markdown_table))
