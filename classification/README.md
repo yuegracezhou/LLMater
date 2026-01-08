@@ -30,7 +30,7 @@ In this phase of the project, we first perform the same benchmarking experiments
 3. Create an OpenAI API key from the OpenAI website and fill in the placeholder for the API KEY
 4. The notebooks will create a zip file and can be downloaded from the UI
 
-#Credits
+# Credits
 
 Original repo: [*ChemLLMBench*](https://github.com/ChemFoundationModels/ChemLLMBench)
 Notebook     : [*Property_Prediction*](https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/Property_Prediction.ipynb)
