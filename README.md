@@ -1,6 +1,4 @@
-# LLMater
-
-# 🧪 Data Science in a Molecular Universe
+# LLMater 🧪 Data Science in a Molecular Universe
 
 Supervisor: Chao Zhang (Department of Chemistry, Uppsala University)
 
@@ -10,32 +8,35 @@ Group Members: André Ramos Ekengren, Ramkishor Prabhu Ramlal, Yue Zhou
 
 ## Table of contents
 
-- [⚙️ Topic Overview](#topic-overview)
+- [Topic Overview](#topic-overview)
 
-Literature Survey
+- [Literature Survey](#literature-survey-from-2022)
 
-Methodologies
+- [Methodologies](#methodologies)
 
-Benchmark Results
+- [Benchmark Results](#benchmark-results)
 
-Future work
+- [Future work](#future-work)
 
 ---
 
-## ⚙️ Topic Overview
+## Topic Overview
 
-Our project investigates the application of large language models (LLMs) to molecular and material design, focusing on molecular property prediction.
+Large language models (LLMs) have shown impressive capabilities in domains such as natural language processing, code generation, and reasoning. In parallel, chemistry and materials science are becoming increasingly data-driven, with growing databases of reactions, molecules, and material properties. Bridging these two developments creates an opportunity: if molecular information can be expressed in a form that is compatible with LLMs, then models originally designed for human language might also support molecular property prediction and materials design.
 
-The main goal in the end is to apply LLMs in the context of battery research, predicting the properties of electrolyte. We then aim to benchmark against traditional ML-models.
-
-We explore transformer-based architectures, planning to combine prompt engineering and parameter fine-tuning to enhance the model’s reasoning and reliability in chemistry-related
-tasks.
-
-Our work aims to bridge natural language understanding and molecular representation for improved prediction accuracy and knowledge grounding.
+In this project we focus on molecular prediction problems in material design that are relevant for battery research. Electrolytes play a central role in battery performance, safety, and lifetime, yet their design space is extremely large. Traditional machine-learning models have been successfully used for some property-prediction tasks, but they often require carefully engineered descriptors and do not easily generalize across different tasks or datasets. LLMs offer an alternative in which the same transformer architecture can be applied to a wide range of problems once the molecules are encoded in a suitable way.
 
 ---
 
 ## Literature Survey (from 2022)
+
+As a first step, we conducted a literature survey on LLM applications in chemistry and materials science (primarily from 2022 onwards). The survey covers:
+
+- Property prediction from molecular or materials representations, often using SMILES or graph-based encodings.
+- Generative design of molecules and materials with targeted properties.
+- Studies that probe the limitations of LLMs in scientific and multimodal settings.
+
+The relevant papers are collected and summarized in a the table below.
 
 | Model name | Architecture | Data link | Description | Adaptation | Purpose | Year | DOI | Github link |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -60,4 +61,49 @@ Our work aims to bridge natural language understanding and molecular representat
 | SMI-TED-IC | SMI-TED | [Github](https://github.com/murtazazohair/IBM_SMI-TED-IC) | Chemical foundation model-guided design of high ionic conductivity electrolyte formulations | Fine-tuning | Regression | 2025 | [DOI](https://doi.org/10.1038/s41524-025-01774-4) | [Github](https://github.com/murtazazohair/IBM_SMI-TED-IC) |
 | Leveraging GPT-4 to transform chemistry from paper to practice  | GPT-4 | [Data](https://gitlab.com/heingroup/gpt-xml-translation.) | 1\. Using GPT 4 to read scientific literature and generate actionable steps 2.Generate a script to communicate the steps to EasyMax Reactor | N/A | N/A | 2024 | N/A | [Github](https://gitlab.com/heingroup/gpt-xml-translation.) |
 |ChemLLMBench|GPT-4, GPT-3, Davinci-003, Llama, Galactica | [Data](https://github.com/ChemFoundationModels/ChemLLMBench) | What can Large Language Models do in chemistry? A comprehensive benchmark on eight tasks |In-context learning | Generation, Classification, Ranking | 2023 | [DOI](https://doi.org/10.48550/arXiv.2305.18365) | [Github](https://github.com/ChemFoundationModels/ChemLLMBench)|
+
+
+---
+
+## Methodologies
+
+Within this context, our project addresses three main tasks:
+
+1. **Molecular property prediction**  
+   Use LLMs to predict molecular properties, for example the conductivity of candidate electrolyte molecules.
+
+2. **Classification**  
+   Formulate classification problems such as distinguishing high-conductivity from low-conductivity molecules or grouping molecules by other experimentally relevant labels.
+
+3. **Molecule generation**  
+   Explore generative modelling, where the goal is to generate new SMILES strings that are chemically valid and have desirable predicted properties. These tasks together span both predictive and generative aspects of molecular design.
+
+---
+
+## Benchmark Results
+
+Each group member re-implemented selected models from the literature, covering property prediction, classification, and molecule generation tasks. These implementations serve both as baselines and as starting points for small methodological variations and improvements.
+
+We then experimented with commercial LLMs (e.g., GPT-4) and selected a common open-source backbone, **Llama-3.2-3B-Instruct**, as our main model. Across the three subtasks, each group member implements and evaluates the model against their respective literature baseline, and explores modifications to improve performance.
+
+Code for the three subtasks is organised as:
+
+- `./regression/` – LLM and baseline models for regression-style property prediction  
+- `./classification/` – LLM and baseline models for molecular classification  
+- `./inverse design/` – LLM-based SMILES generation and post-processing
+
+---
+
+## Future Work
+
+- Investigating improved fine-tuning and evaluation strategies, including robustness in low-data regimes and better uncertainty estimates.
+- Developing more targeted generative workflows that couple LLM-based generation with domain-specific filters or chemistry-based checks.
+
+Contributions and suggestions are welcome, especially regarding datasets, baselines, and evaluation protocols.
+
+---
+
+## License
+
+This project is released under the [MIT License](https://opensource.org/license/MIT).
 
