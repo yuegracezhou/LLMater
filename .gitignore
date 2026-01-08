@@ -1,0 +1,23 @@
+# macOS / Python cache
+.DS_Store
+**/.DS_Store
+__pycache__/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Model training (huge files)
+inverse-design/minGPT/ckpts/
+inverse-design/models/llama-polygen-htpmd-lora/checkpoint-900/
+inverse-design/models/llama-polygen-htpmd-lora/checkpoint-1605/
+
+# artifacts
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.ckpt
+*.numbers
+
+# secrets
+.env
