@@ -14,7 +14,7 @@ We select a number of samples using **random sampling** and **scaffold sampling*
 
 In this benchmarking setup, we aim to replicate the experimental conditions described in the original paper as closely as possible in order to verify the reported results.
 
-[result](https://github.com/yuegracezhou/LLMater/blob/classification/classification/Screenshot%20(148).png)
+[result](classification/Screenshot (148).png)
 
 # Open Model Fine-Tuning
 
