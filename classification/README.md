@@ -23,7 +23,7 @@ Limitations of free version: Number of Prompts per day, Number of tokens per day
 
 In this phase of the project, we first perform the same benchmarking experiments using an open-source **LLaMA-based model**. We then fine-tune the model to achieve improved performance on molecular property prediction tasks.
 
-#Notebook Usage
+# Notebook Usage
 
 1. Download the notebooks or clone the repository to your environment.
 2. Use a Jupyter or any python environment. For best results use Google Colab Notebooks
