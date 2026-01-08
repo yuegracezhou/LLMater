@@ -13,9 +13,9 @@ We select a number of samples using **random sampling** and **scaffold sampling*
 
 In this benchmarking setup, we aim to replicate the experimental conditions described in the original paper as closely as possible in order to verify the reported results.
 
-##Model: **GPT-4o-mini**
-##Sampling: **Random**, **Scaffold**
-##Number of samples used: 4,7
+-Model: **GPT-4o-mini**
+-Sampling: **Random**, **Scaffold**
+-Number of samples used: 4,7
 
 Limitations of free version: Number of Prompts per day, Number of tokens per day
 
