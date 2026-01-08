@@ -6,7 +6,7 @@ for molecular property prediction. It takes a SMILES input and predicts whether 
 
 # Method
 
-This approach utilizes **In-Context Learning (ICL)** using **GPT-4o-mini**. Several changes have been made to the original experimental setup in order to accommodate the constraints of the free version of the OpenAI model.
+This approach utilizes **In-Context Learning (ICL)** using **GPT model**. Several changes have been made to the original experimental setup in order to accommodate the constraints of the free version of the OpenAI model.
 
 We select a number of samples using **random sampling** and **scaffold sampling**, which are provided as context along with the prompt. The actual test sample is then appended, and the model is asked to predict the corresponding property.
 
@@ -14,7 +14,11 @@ We select a number of samples using **random sampling** and **scaffold sampling*
 
 In this benchmarking setup, we aim to replicate the experimental conditions described in the original paper as closely as possible in order to verify the reported results.
 
+Model: **GPT-4o-mini**
+
 ![result](https://github.com/yuegracezhou/LLMater/blob/classification/classification/Screenshot%20(148).png)
+
+note: naming in the result represent the sampling method used and number of samples given as context in the prompt. Zeroshot does not have any context given to the model.
 
 # Open Model Fine-Tuning
 
