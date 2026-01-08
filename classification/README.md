@@ -14,10 +14,10 @@ We select a number of samples using **random sampling** and **scaffold sampling*
 In this benchmarking setup, we aim to replicate the experimental conditions described in the original paper as closely as possible in order to verify the reported results.
 
 Model: **GPT-4o-mini**
+Sampling: **Random**, **Scaffold**
+Number of samples used: 4,7
 
-![result](https://github.com/yuegracezhou/LLMater/blob/classification/classification/Screenshot%20(148).png)
-
-note: naming in the result represent the sampling method used and number of samples given as context in the prompt. Zeroshot does not have any context given to the model.
+Limitations of free version: Number of Prompts per day, Number of tokens per day
 
 # Open Model Fine-Tuning
 
