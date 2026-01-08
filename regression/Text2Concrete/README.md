@@ -14,7 +14,7 @@ As the text-davinci-003 model is deprecated, it is no longer used in this projec
 - Llama-3.2-3B-Instruct
 - Llama-3.1-70B-Instruct-bnb-4bit
 
-We have made some changes to the code, and the software and packages that were used. Finally, we slightly altered the given context prompts, and calculations of the metrics used to evaluate the model performance.
+We have made some changes to the code, the software and packages that were used. Finally, we slightly altered the given context prompts, and calculations of the metrics used to evaluate the model performance.
 
 ### Overview
 
