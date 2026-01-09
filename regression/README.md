@@ -98,7 +98,7 @@ For inference of Llama-3.2-3B-Instruct and Llama-3.1-70B-Instruct-bnb-4bit we us
 
 
 ## Results 
-This section contains screenshots of the evaluation results for each LLM model compared to traditional ML models.
+This section contains the evaluation results for each LLM model compared to traditional ML models.
 
 ### GPT-3.5-Turbo-Instruct
 
