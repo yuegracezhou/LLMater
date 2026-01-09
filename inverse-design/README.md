@@ -1,3 +1,7 @@
+# Inverse Design
+
+---
+
 ## Introduction
 
 Designing new electrolytes is a key challenge in battery research, where safety, performance, and longevity depend heavily on molecular properties. Traditional molecular ML models predict properties from known structures, but many real-world tasks—like discovering novel materials—require the inverse: generating molecules with desired properties.
@@ -18,7 +22,7 @@ To further align with PolyGen's conditional generation setup, we fine-tune LLaMA
 
 Finally, we evaluate all four models (minGPT, GPT-4o, base LLaMA, fine-tuned LLaMA) using the same six metrics. Additionally, we perform functional group analysis to understand the chemical patterns favored by each model and condition.
 
-### Key Methods: Inverse molecular design with LLMs, LoRA fine-tuning, tokenizatio (p-SMILES), conditional generation
+#### Key Methods: Inverse molecular design with LLMs, LoRA fine-tuning, tokenizatio (p-SMILES), conditional generation
 
 ---
 
@@ -32,9 +36,18 @@ We represent molecular structures using SMILES (Simplified Molecular Input Line 
 
 For training and evaluation, we use [htp_md.csv](inverse-design/data/raw/htp_md.csv), a dataset containing polymer candidates with SMILES representations and binary conductivity labels (high/low). These SMILES are used both as LLM input/output and for downstream property evaluation.
 
-![SMILES representation example](inverse-design/images/smiles_example.png)
+![SMILES representation example](inverse-design/images/smiles_example.jpg)
 
 *Example of how a 2D molecular structure maps to its SMILES string.*
+
+
+---
+
+## How to run
+
+---
+
+## Results
 
 ---
 
