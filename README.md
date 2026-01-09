@@ -88,9 +88,9 @@ We then experimented with commercial LLMs (e.g., GPT-4) and selected a common op
 
 Code for the three subtasks is organised as:
 
-- `./regression/` – LLM and baseline models for regression-style property prediction  
-- `./classification/` – LLM and baseline models for molecular classification  
-- `./inverse design/` – LLM-based SMILES generation and post-processing
+- `./regression/` – LLM and baseline models for regression-style property prediction (implemented by André Ramos Ekengren)  
+- `./classification/` – LLM and baseline models for molecular classification (implemented by Ramkishor Prabhu Ramlal)  
+- `./inverse-design/` – LLM-based SMILES generation and post-processing (implemented by Yue Zhou)
 
 ---
 
