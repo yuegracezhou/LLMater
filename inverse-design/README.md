@@ -34,9 +34,9 @@ We represent molecular structures using SMILES (Simplified Molecular Input Line 
 - **Why we use it**: SMILES strings are directly compatible with transformer-based Large Language Models (LLMs), which are designed to process sequential token data.
 - **Our purpose**: By treating SMILES as a form of “chemical language,” we can leverage LLMs for molecule generation and property-conditioned design.
 
-For training and evaluation, we use [htp_md.csv](inverse-design/data/raw/htp_md.csv), a dataset containing polymer candidates with SMILES representations and binary conductivity labels (high/low). These SMILES are used both as LLM input/output and for downstream property evaluation.
+For training and evaluation, we use [htp_md.csv](data/raw/htp_md.csv), a dataset containing polymer candidates with SMILES representations and binary conductivity labels (high/low). These SMILES are used both as LLM input/output and for downstream property evaluation.
 
-![SMILES representation example](inverse-design/images/smiles_example.jpg)
+![SMILES representation example](images/smiles_example.jpg)
 
 *Example of how a 2D molecular structure maps to its SMILES string.*
 
@@ -45,9 +45,111 @@ For training and evaluation, we use [htp_md.csv](inverse-design/data/raw/htp_md.
 
 ## How to run
 
+This section outlines the key steps to reproduce our experiments and evaluate inverse design results.
+
+### 1. Set up the environment
+
+Install required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Make sure your environment includes:
+- `transformers`, `peft`, `datasets`, `scikit-learn`, `rdkit`, etc.
+- GPU is recommended for LLM inference and fine-tuning
+
 ---
 
-## Results
+### 2. Reproduce minGPT results
+
+Use the original PolyGen-style minGPT pipeline:
+
+```python
+notebooks/generation/minGPT_pipeline.ipynb
+```
+
+Results are saved in:
+
+```
+data/generated/
+```
+
+---
+
+### 3. Generate SMILES using GPT-4o and base LLaMA
+
+Prompt-based inverse design using language models:
+
+```python
+notebooks/generation/gpt4o_generate.ipynb
+notebooks/generation/llama_generate.ipynb
+```
+
+Cleaned outputs are stored under:
+
+```
+data/generated/
+```
+
+---
+
+### 4. Fine-tune LLaMA on HTP-MD (PolyGen-style)
+
+Fine-tune `meta-llama/Llama-3.2-3B-Instruct` using LoRA on HTP-MD data:
+
+```python
+notebooks/generation/llama_finetune_htpmd.ipynb
+```
+
+Input format:
+
+```
+[<HIGH>, <HIGH>, <HIGH>, <HIGH>, <HIGH>] + SMILES
+```
+
+The fine-tuned model is saved under:
+
+```
+models/llama-polygen-htpmd-lora/
+```
+
+---
+
+### 5. Generate with fine-tuned LLaMA
+
+Conditionally generate p-SMILES using the fine-tuned model:
+
+```python
+notebooks/generation/llama_generate_tuned.ipynb
+```
+
+---
+
+### 6. Evaluate generated SMILES
+
+Compute all evaluation metrics:
+
+- Validity
+- Uniqueness
+- Novelty
+- Synthesizability
+- Similarity
+- Diversity
+
+Also includes functional group analysis.
+
+Run:
+
+```python
+notebooks/evaluation/compute_metrics.ipynb
+```
+
+Outputs are saved to:
+
+```
+results/metrics/
+```
 
 ---
 
