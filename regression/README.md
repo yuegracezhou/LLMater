@@ -1,4 +1,4 @@
-# From Text to Concrete: Developing Sustainable Concretes with In-Context Learning
+# Regression - From Text to Concrete: Developing Sustainable Concretes with In-Context Learning
 
 ## Introduction
 This repository contains the code and dataset for the study "From Text to Concrete: Developing Sustainable Concretes with In-Context Learning". The project aims to improve the development of sustainable concrete formulations using in-context learning (ICL) and large language models (LLMs). By leveraging the potential of LLMs, this research aims to overcome the limitations of traditional methods and accelerate the discovery of novel, sustainable, and high-performance materials.
@@ -91,9 +91,9 @@ We provide two different options for the rest of the setup
 For inference of Llama-3.2-3B-Instruct and Llama-3.1-70B-Instruct-bnb-4bit we used a T4 and A40 GPU respectively.
 
 ## Usage
-1. Run the different `Benchmarking-model_name.ipynb` notebooks in your container or environment to train the completion predictor and generate completions for test data.
+1. Run the different `Benchmarking-"model_name".ipynb` notebooks in your container or environment to train the completion predictor and generate completions for test data.
 2. The completion predictor's performance will be evaluated using R-squared, MSE, and MAE metrics, which will be printed on the console. The resulting predictions will be saved as CSVs in the results folder for each model. 
-3. Run the `Benchmarking-Results-model_name.ipynb` notebooks for the evaluation of each model.
+3. Run the `Benchmarking-Results-"model_name".ipynb` notebooks for the evaluation of each model.
 3. You can modify the code to customize the prompts, completions, and other parameters as needed for your specific use case.
 
 
