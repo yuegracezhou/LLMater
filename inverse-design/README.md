@@ -253,10 +253,12 @@ If high-prompt molecules tend to have large \(P(\text{high})\) and low-prompt mo
 The figures below visualize the predicted \(P(\text{high})\) distributions from the RandomForest for each generator:
 
 <p align="center">
-  <img src="results/baselines/mingpt_property_alignment.png" width="24%" />
-  <img src="results/baselines/gpt4o_property_alignment.png" width="24%" />
-  <img src="results/baselines/llama_property_alignment.png" width="24%" />
-  <img src="results/baselines/llama_tuned_property_alignment.png" width="24%" />
+  <img src="results/baselines/mingpt_property_alignment.png" width="45%" />
+  <img src="results/baselines/gpt4o_property_alignment.png" width="45%" />
+</p>
+<p align="center">
+  <img src="results/baselines/llama_property_alignment.png" width="45%" />
+  <img src="results/baselines/llama_tuned_property_alignment.png" width="45%" />
 </p>
 
 Each panel overlays high-prompt (blue) and low-prompt (orange) histograms, giving a visual check of how strongly each model separates the two property conditions.
