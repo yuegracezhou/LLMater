@@ -100,12 +100,17 @@ Improve:
 Fine-tuning improves accuracy but may reduce sensitivity to prompt context.
 
 ---
-├── notebooks/
-│ └── Property_Prediction.ipynb
-├── data/
-│ └── (dataset files)
-├── outputs/
-│ └── results and logs
-└── README.md
 
-## 📂 Repository Structure
+# Notebook Usage
+
+1. Download the notebooks or clone the repository to your environment.
+2. Use a Jupyter or any python environment. For best results use Google Colab Notebooks
+3. Create an OpenAI API key from the OpenAI website and fill in the placeholder for the API KEY
+4. The notebooks will create a zip file and can be downloaded from the UI
+
+# Credits
+
+Original repo: [*ChemLLMBench*](https://github.com/ChemFoundationModels/ChemLLMBench)<br>
+Notebook     : [*Property_Prediction*](https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/Property_Prediction.ipynb)<br>
+Data         : [*Data*](https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/data/property_prediction/BACE.csv)
+
