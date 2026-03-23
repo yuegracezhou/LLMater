@@ -87,21 +87,19 @@ Improve:
 - Overall classification performance  
 
 ---
-## 📈 Results
-
-<p align="center">
-  <img src="LLMater/classification/result_table.png" width="600"/>
-  <br>
-  <em>Figure: Classification performance across different sampling strategies and context sizes</em>
-</p>
----
 ## 📈 Key Observations
 - **ICL is essential**: Zero-shot performance is poor  
 - **Sampling strategy matters**: Scaffold-based sampling improves results  
 - **Context size helps**: More examples improve predictions  
 - **Fine-tuning improves performance**:
   - Better stability  
-  - Higher recall and F1 score  
+  - Higher recall and F1 score
+
+<p align="center">
+  <img src="LLMater/classification/result_table.png" width="600"/>
+  <br>
+  <em>Figure: Classification performance across different sampling strategies and context sizes</em>
+</p>
 
 **Trade-off:**  
 Fine-tuning improves accuracy but may reduce sensitivity to prompt context.
