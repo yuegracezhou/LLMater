@@ -100,5 +100,12 @@ Improve:
 Fine-tuning improves accuracy but may reduce sensitivity to prompt context.
 
 ---
+├── notebooks/
+│ └── Property_Prediction.ipynb
+├── data/
+│ └── (dataset files)
+├── outputs/
+│ └── results and logs
+└── README.md
 
 ## 📂 Repository Structure
