@@ -1,10 +1,10 @@
 # Classification
 
-##📌 Overview
+📌 #Overview
 
 This module focuses on molecular property classification using Large Language Models (LLMs). The task involves predicting whether a given molecule—represented as a SMILES string—exhibits a specific property. The implementation is inspired by the benchmark study: [**What can Large Language Models do in chemistry? A comprehensive benchmark on eight tasks**]([https://github.com/ChemFoundationModels/ChemLLMBench](https://doi.org/10.48550/arXiv.2305.18365)), for molecular property prediction and tries to replicate the experimental setups. It takes a SMILES input and predicts whether the molecule exhibits a particular property.
 
-##🎯 Objective
+🎯 #Objective
 Input: SMILES representation of a molecule
 Output: Binary classification label
 
@@ -14,7 +14,7 @@ The goal is to evaluate how effectively LLMs can act as discriminative models fo
 Different sampling strategies
 Both closed and open-source models
 
-##⚙️ Methodology
+⚙️ #Methodology
 🧠 In-Context Learning (ICL)
 
 We use few-shot prompting, where:
@@ -23,7 +23,7 @@ We use few-shot prompting, where:
 2. A new (test) SMILES string is appended
 3. The model predicts the corresponding label
 
-##📊 Context Construction
+📊 #Context Construction
 
 Two sampling strategies are used to build the in-context examples:
 
@@ -43,7 +43,7 @@ We experiment with:
 
 These configurations help evaluate how context size impacts performance.
 
-##🧪 Experimental Setup
+🧪 #Experimental Setup
 
 🔒 Closed Model Benchmarking
 
@@ -59,7 +59,7 @@ Limited number of prompts per day
 Token usage restrictions
 Reduced context size compared to original paper
 
-##🌐 Open Model Benchmarking & Fine-Tuning
+🌐 #Open Model Benchmarking & Fine-Tuning
 
 We extend the experiments using an open-source model:
 
