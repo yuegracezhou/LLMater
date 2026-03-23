@@ -19,7 +19,6 @@ The implementation is inspired by the benchmark study:
 - [🧪 Experimental Setup](#-experimental-setup)
   - [🔒 Closed Model Benchmarking](#-closed-model-benchmarking)
   - [🌐 Open Model Benchmarking & Fine-Tuning](#-open-model-benchmarking--fine-tuning)
-- [📈 Results](#-results)
 - [📈 Key Observations](#-key-observations)
 - [📓 Notebook Usage](#-notebook-usage)
 - [🙏 Credits](#-credits)
