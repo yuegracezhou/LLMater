@@ -90,7 +90,7 @@ Improve:
 ## 📈 Results
 
 <p align="center">
-  <img src="classification/result_table.png" width="600"/>
+  <img src="LLMater/classification/result_table.png" width="600"/>
   <br>
   <em>Figure: Classification performance across different sampling strategies and context sizes</em>
 </p>
