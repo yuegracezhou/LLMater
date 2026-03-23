@@ -7,6 +7,22 @@ The implementation is inspired by the benchmark study:
 **“What can Large Language Models do in chemistry? A comprehensive benchmark on eight tasks”**, and aims to replicate and extend its experimental setup under constrained resources.
 
 ---
+## 📚 Table of Contents
+
+- [🎯 Objective](#-objective)
+- [⚙️ Methodology](#️-methodology)
+  - [🧠 In-Context Learning (ICL)](#-in-context-learning-icl)
+  - [📊 Context Construction](#-context-construction)
+    - [Random Sampling](#1-random-sampling)
+    - [Scaffold Sampling](#2-scaffold-sampling)
+  - [🔢 Number of Context Samples](#-number-of-context-samples)
+- [🧪 Experimental Setup](#-experimental-setup)
+  - [🔒 Closed Model Benchmarking](#-closed-model-benchmarking)
+  - [🌐 Open Model Benchmarking & Fine-Tuning](#-open-model-benchmarking--fine-tuning)
+- [📈 Results](#-results)
+- [📈 Key Observations](#-key-observations)
+- [📓 Notebook Usage](#-notebook-usage)
+- [🙏 Credits](#-credits)
 
 ## 🎯 Objective
 - **Input:** SMILES representation of a molecule  
