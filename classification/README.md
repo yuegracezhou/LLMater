@@ -95,11 +95,7 @@ Improve:
   - Better stability  
   - Higher recall and F1 score
 
-<p align="center">
-  <img src="LLMater/classification/result_table.png" width="600"/>
-  <br>
-  <em>Figure: Classification performance across different sampling strategies and context sizes</em>
-</p>
+![](LLMater/classification/result_table.png)
 
 **Trade-off:**  
 Fine-tuning improves accuracy but may reduce sensitivity to prompt context.
