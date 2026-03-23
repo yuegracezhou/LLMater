@@ -95,7 +95,7 @@ Improve:
   - Better stability  
   - Higher recall and F1 score
 
-![](LLMater/classification/result_table.png)
+![](result_table.png)
 
 **Trade-off:**  
 Fine-tuning improves accuracy but may reduce sensitivity to prompt context.
