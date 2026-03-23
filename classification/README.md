@@ -88,11 +88,13 @@ Improve:
 
 ---
 ## 📈 Results
+
 <p align="center">
   <img src="classification/result_table.png" width="600"/>
   <br>
-  <em>Figure: In-context learning setup for molecular classification</em>
+  <em>Figure: Classification performance across different sampling strategies and context sizes</em>
 </p>
+---
 ## 📈 Key Observations
 - **ICL is essential**: Zero-shot performance is poor  
 - **Sampling strategy matters**: Scaffold-based sampling improves results  
