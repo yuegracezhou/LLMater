@@ -1,6 +1,6 @@
 # LLMater 🧪 Data Science in a Molecular Universe
 
-[![DOI](https://zenodo.org/badge/1067242057.svg)](https://doi.org/10.5281/zenodo.20286231)
+[![DOI](https://zenodo.org/badge/1067242057.svg?v=1)](https://doi.org/10.5281/zenodo.20286231)
 
 Supervisor: Chao Zhang (Department of Chemistry, Uppsala University)
 
